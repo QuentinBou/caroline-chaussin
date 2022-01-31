@@ -1,38 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Vujahday+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
 .App {
-  text-align: center;
+  position: relative;
+}
+#root {
+  width: 100%;
+}
+body {
+    background-color: #FFE5BD;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #873600;
+}
+header {
+    width: 100%;
+}
+h1 {
+    font-family: 'Vujahday Script', cursive;
+    font-size: 3rem;
+    color: #5a2401;
+}
+h3 {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+    color: #873600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.component-container{
+  min-height: 55vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+    width: 100%;
+    background-color: #F7C67D;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    box-shadow: 0 0 12px #873600d7;
+}
+footer section h3 {
+    text-decoration: underline;
+}
+footer section {
+    width: 30%;
+}
+footer section:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+footer hr {
+    width: 20%;
+    border: none;
+    height: .5px;
+    background-color: #873600cc;
 }
-
-.App-link {
-  color: #61dafb;
+.footer-text {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-text p {
+    font-size: 1.15rem;
+}
+.footer-text p:not(:nth-child(1)){
+    margin-top: 2rem;
+}
+.social-link {
+    width: 30%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.face-logo{
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: all .2s ease-in-out;
+}
+.face-logo:hover {
+    font-size: 2rem;
+    text-shadow: 0 7px 16px rgba(255, 255, 255, 0.76);
 }
