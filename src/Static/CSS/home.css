@@ -1,0 +1,121 @@
+.component-container section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.component-container section:not(:first-child){
+    margin-top: 4rem;
+}
+.name-job h1 {
+    font-size: 4rem;
+}
+.name-job h2 {
+    font-size: 2.4rem;
+}
+.name-job, .domaines {
+    margin-top: 1rem;
+    text-align: center;
+}
+.paragraphe {
+    width: 90%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.paragraphe p, .domaine-liste p {
+    text-align: center;
+    font-size: 1.35rem;
+}
+
+.who h2, .domaines h2, .consultation h2 {
+    font-family: 'Vujahday Script', cursive;
+    font-size: 2.6rem;
+    color: #5a2401;
+    text-align: center;
+}
+
+.domaine-liste {
+    width: 50%;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.domaine-liste li {
+    margin-top: 0.5rem;
+    list-style-type: none;
+    text-align: center;
+}
+.domaine-liste p {
+    margin-top: 2rem;
+    font-weight: 400;
+}
+.avertissement {
+    font-style: oblique;
+    font-weight: bold !important;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.24);
+}
+
+.tarif {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tarif-card, .coaching-card {
+    width: 33%;
+    min-height: 16rem;
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: .2s ease;
+}
+.tarif-card:hover, .coaching-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.prize, .coaching-title {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.what, .coaching-detail {
+    text-align: center;
+}
+.tarif-warning {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-style: oblique;
+}
+.consultation {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+.consultation h2 {
+    margin-bottom: 2rem;
+}
+.consultation p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.consultation span {
+    font-size: 1.4rem;
+    font-weight: 400;
+}

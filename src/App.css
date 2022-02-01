@@ -48,15 +48,31 @@ a {
     font-size: 1.2rem;
     font-weight: 300;
 }
-
+.citation {
+    margin-top: 3rem;
+    text-align: center;
+}
+.citation p {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.citation span {
+    font-style: oblique;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
 .component-container{
   min-height: 55vh;
+  padding: 1.5rem 0;
 }
 
 footer {
     width: 100%;
     background-color: #F7C67D;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 25px;
     box-shadow: 0 0 12px #873600d7;
@@ -97,11 +113,13 @@ footer hr {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    min-height: 7vh;
 }
 .face-logo{
     cursor: pointer;
     font-size: 1.6rem;
     transition: all .2s ease-in-out;
+    position: relative;
 }
 .face-logo:hover {
     font-size: 2rem;
