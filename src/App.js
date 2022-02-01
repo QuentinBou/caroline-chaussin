@@ -14,16 +14,18 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Routes>
-        <Route path="/caroline-chaussin/" element={<Home/>} />
-        <Route path="/caroline-chaussin/hypno" element={<Hypno/>} />
-        <Route path="/caroline-chaussin/carto" element={<Carto/>} />
-        <Route path="/caroline-chaussin/atelier" element={<Atelier/>}>
-          <Route path="/caroline-chaussin/atelier/tao" element={<Tao/>} />
-          <Route path="/caroline-chaussin/atelier/maux" element={<Maux/>} />
-        </Route>
-        <Route path="/caroline-chaussin/ethique" element={<Ethique/>} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/caroline-chaussin/" element={<Home/>} />
+          <Route path="/caroline-chaussin/hypno" element={<Hypno/>} />
+          <Route path="/caroline-chaussin/carto" element={<Carto/>} />
+          <Route path="/caroline-chaussin/atelier" element={<Atelier/>}>
+            <Route path="/caroline-chaussin/atelier/tao" element={<Tao/>} />
+            <Route path="/caroline-chaussin/atelier/maux" element={<Maux/>} />
+          </Route>
+          <Route path="/caroline-chaussin/ethique" element={<Ethique/>} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
