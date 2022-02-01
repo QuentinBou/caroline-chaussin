@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/caroline-chaussin/static/css/main.d31d384e.css",
-    "main.js": "/caroline-chaussin/static/js/main.4cac4115.js",
+    "main.css": "/caroline-chaussin/static/css/main.d7d732b9.css",
+    "main.js": "/caroline-chaussin/static/js/main.6455fa2e.js",
     "static/js/787.82bd4856.chunk.js": "/caroline-chaussin/static/js/787.82bd4856.chunk.js",
     "static/media/ethique.pdf": "/caroline-chaussin/static/media/ethique.86afb791ee92e032141b.pdf",
     "static/media/logo_2.png": "/caroline-chaussin/static/media/logo_2.4a5640d9a65da99c4097.png",
     "index.html": "/caroline-chaussin/index.html",
-    "main.d31d384e.css.map": "/caroline-chaussin/static/css/main.d31d384e.css.map",
-    "main.4cac4115.js.map": "/caroline-chaussin/static/js/main.4cac4115.js.map",
+    "main.d7d732b9.css.map": "/caroline-chaussin/static/css/main.d7d732b9.css.map",
+    "main.6455fa2e.js.map": "/caroline-chaussin/static/js/main.6455fa2e.js.map",
     "787.82bd4856.chunk.js.map": "/caroline-chaussin/static/js/787.82bd4856.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d31d384e.css",
-    "static/js/main.4cac4115.js"
+    "static/css/main.d7d732b9.css",
+    "static/js/main.6455fa2e.js"
   ]
 }
