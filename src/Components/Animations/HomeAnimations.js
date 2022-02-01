@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {Animator, ScrollContainer, ScrollPage, batch, Fade, Sticky, MoveOut, MoveIn, Zoom, ZoomIn, Move} from 'react-scroll-motion'
 
-export default function TestAnim() {
+export default function HomeAnimations() {
   return (
       <ScrollContainer>
           <ScrollPage page={0}>
