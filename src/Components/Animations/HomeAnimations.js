@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {Animator, ScrollContainer, ScrollPage, batch, Fade, Sticky, MoveOut, MoveIn, Zoom, ZoomIn, Move} from 'react-scroll-motion'
+import {Animator, ScrollContainer, ScrollPage, batch, Fade, Sticky, MoveOut, MoveIn, Zoom, ZoomIn, Move, FadeIn} from 'react-scroll-motion'
 
 export default function HomeAnimations() {
   return (
       <ScrollContainer>
           <ScrollPage page={0}>
-              <Animator animation={batch(Fade(), MoveOut(0, -200))}>
+              <Animator animation={batch(FadeIn(), MoveOut())}>
                 <section>
                     <div className='name-job'>
                     <h1>Caroline Chaussin</h1>
@@ -18,10 +18,9 @@ export default function HomeAnimations() {
                     </div>
                     <div className="paragraphe">
                     <p>Chaque être est unique, chaque problème a sa solution unique en fonction de qui vous êtes. L’hypnothérapie offre les outils les plus complets, Aujourd’hui, après plusieurs années de pratique, je sais combien nous pouvons passer à côté de nous-mêmes. Tant d’idées préconçues bloquent notre évolution. Des douleurs enfouies, des traumatismes non reconnus, des états dont nous ne sommes même pas conscients souvent...</p>
-                    <br/>
                     <p>Après quelques séances d’hypnose, le regard change, les perspectives s’ouvrent... <br/>Et les possibles grandissent...</p>
                     </div>
-                    <div className="citation">
+                    <div className="citation-perso">
                     <p>Mieux se connaître pour mieux s’aimer <br/>
                         Mieux s’aimer pour mieux aimer <br/>
                         Mieux aimer pour mieux vivre <br/>
@@ -33,7 +32,7 @@ export default function HomeAnimations() {
           </ScrollPage>
 
           <ScrollPage page={1}>
-              <Animator animation={batch(Fade(),MoveIn(-400, 100, 0, 0), MoveOut(300, -100))}>
+              <Animator animation={batch(Fade(), MoveOut())}>
                 <section className='index-prio'>
                     <div className="who">
                     <h2>Qui suis-je ?</h2>
@@ -54,7 +53,7 @@ export default function HomeAnimations() {
           </ScrollPage>
 
           <ScrollPage page={2}>
-              <Animator animation={batch(Fade(), MoveOut(-600, 400))}>
+              <Animator animation={batch(Fade(), MoveOut(0, 300))}>
                 <section className='domaines-section'>
                     <div className="citation citation-seule">
                     <p>« Ce à quoi tu résistes persiste»</p>
@@ -64,7 +63,7 @@ export default function HomeAnimations() {
               </Animator>
           </ScrollPage>
           <ScrollPage page={3}>
-              <Animator animation={batch(Fade(), MoveOut(0, -200))}>
+              <Animator animation={batch(FadeIn(), MoveOut(0, -300))}>
                 <section className='domaine-liste'>
                     <div className="domaines">
                         <h2>Domaines d’intervention:</h2>
@@ -98,20 +97,18 @@ export default function HomeAnimations() {
               </Animator>
           </ScrollPage>
           <ScrollPage page={5}>
-              <Animator animation={batch(Fade(),MoveOut(600, 400))}>
+              <Animator>
                 <section>
                     <div className="pratique">
                         <div className="citation citation-seule">
                             <p>«Un temps de partage et d’échanges bienveillants»</p>
                         </div>
                     
-                    <div className="paragraphe">
-                        <p>La première séance, d’une durée d’environ 1h30, permet de se connaître. La confiance étant l’élément indispensable aux résultats, vous devez pouvoir choisir de donner suite ou non. De mon côté, je vous questionne sur votre problématique afin de trouver le meilleur chemin pour vous guider.</p> <br/>
-                        <p>Une première induction, légère ouvrira les portes de votre cheminement intérieur. Vous trouverez le calme et l’énergie pour avancer.</p> <br/>
-                        <p>Nous définissons ensemble la suite.</p><br/>
+                    <div className="paragraphe seance-paragraphe">
+                        <p>La première séance, d’une durée d’environ 1h30, permet de se connaître. La confiance étant l’élément indispensable aux résultats, vous devez pouvoir choisir de donner suite ou non. De mon côté, je vous questionne sur votre problématique afin de trouver le meilleur chemin pour vous guider.</p>
+                        <p>Une première induction, légère ouvrira les portes de votre cheminement intérieur. Vous trouverez le calme et l’énergie pour avancer.</p>
+                        <p>Nous définissons ensemble la suite.</p>
                         <p>Les séances suivantes seront alors planifiées.</p>
-                        <br/>
-                        <br/>
                         <p>Chacune de mes consultations est unique, adaptée à vous seul. La confidentialité est totale. (<Link to="/caroline-chaussin/ethique">Voir Charte Ethique</Link>).</p>
                     </div>
                     </div>
@@ -119,17 +116,17 @@ export default function HomeAnimations() {
               </Animator>
           </ScrollPage>
           <ScrollPage page={6}>
-              <Animator animation={batch(Fade(),MoveOut(-600, 400))}>
+              <Animator animation={batch(Fade(),MoveOut(0, 200))}>
                 <section className="tarif">
                     <div className="tarif-card">
-                    <p className="prize">60€</p>
-                    <hr/>
-                    <p className="what">Une séance d'hypnothérapie</p>
+                        <p className="prize">60€</p>
+                        <hr/>
+                        <p className="what">Une séance d'hypnothérapie</p>
                     </div>
                     <div className="coaching-card">
-                    <p className="coaching-title">Coaching</p>
-                    <hr/>
-                    <p className="coaching-detail">Tout coaching fera l’objet d’un devis personnalisé.</p>
+                        <p className="coaching-title">Coaching</p>
+                        <hr/>
+                        <p className="coaching-detail">Tout coaching fera l’objet d’un devis personnalisé.</p>
                     </div>
                     <p className="tarif-warning">Tarifs réduits pour les étudiants, chômeurs, personnes en difficultés. (sur justificatif)</p>
                 </section>

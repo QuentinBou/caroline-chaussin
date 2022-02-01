@@ -105,23 +105,81 @@
     font-style: oblique;
 }
 .consultation {
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-.consultation h2 {
+.consult {
     margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .consultation p {
     width: 50%;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: .5rem;
     font-size: 1.8rem;
     font-weight: bold;
+    margin-top: 1rem;
 }
 .consultation span {
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+@media (min-width: 1250px){
+
+}
+@media (max-width: 1030px){
+
+}
+@media (max-width: 910px){
+
+}
+@media (max-width: 810px){
+    .tarif-card, .coaching-card {
+        width: 40%;
+    }
+}
+@media (max-width: 730px){
+    .component-container section {
+        width: 95%;
+    }
+}
+@media (max-width: 640px){
+    .paragraphe p{
+        text-align: justify;
+        padding: 0 10px;
+    }
+    .consultation p {
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .tarif-card, .coaching-card {
+        width: 80%;
+        min-height: 8rem;
+        padding: 10px 20px;
+    }
+    .coaching-card {
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 295px){
+    .paragraphe p{
+        text-align: justify;
+        padding: 0 10px;
+    }
+    .consultation p {
+        width: 100%;
+    }
 }

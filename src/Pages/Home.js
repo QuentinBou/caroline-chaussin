@@ -8,8 +8,8 @@ export default function Home() {
       
       <HomeAnimations />
       
+      <h2 className='consult'>Consultations:</h2>
       <section className="consultation">
-        <h2>Consultations:</h2>
         <p>Cabinet: <span>7 rue Étienne de Lacepéde 66000 Perpignan</span></p>
         <p>Visio: <span>Messenger ou Skype</span></p>
         <p>Domicile: <span>Frais supplémentaires selon distance</span></p>

@@ -5,16 +5,17 @@
 .navbar {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     min-height: 10vh;
-    max-height: 12vh;
     padding: 10px 25px;
     background-color: #F7C67D;
     box-shadow: 0 0 12px #873600d7;
 }
 nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     width: 100%;

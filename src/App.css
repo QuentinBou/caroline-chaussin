@@ -53,7 +53,10 @@ a {
     margin-top: 3rem;
     text-align: center;
 }
-.citation p {
+.citation-perso {
+    margin-top: 1rem;
+}
+.citation p, .citation-perso p {
     font-style: italic;
     text-align: center;
     font-size: 1.2rem;
@@ -83,6 +86,7 @@ footer {
     background-color: #F7C67D;
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 25px;
     box-shadow: 0 0 12px #873600d7;
@@ -134,4 +138,82 @@ footer hr {
 .face-logo:hover {
     font-size: 2rem;
     text-shadow: 0 7px 16px rgba(255, 255, 255, 0.76);
+}
+
+
+
+/* All Responsive */
+@media (min-width: 1250px){
+    html {
+        font-size: 17px;
+    }
+}
+@media (max-width: 1030px){
+    html {
+        font-size: 15px;
+    }
+}
+@media (max-width: 910px){
+    html {
+        font-size: 14px;
+    }
+}
+@media (max-width: 810px){
+    .tarif-card, .coaching-card {
+        width: 40%;
+    }
+    footer section {
+        width: 50%;
+    }
+}
+@media (max-width: 730px){
+    html {
+        font-size: 13px;
+    }
+    .component-container section {
+        width: 95%;
+    }
+}
+@media (max-width: 640px){
+    html {
+        font-size: 12.5px;
+    }
+    br {
+        line-height: 0;
+        height: 0;
+    }
+    footer section {
+        width: 95%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .paragraphe p{
+        text-align: justify;
+        padding: 0 10px;
+    }
+    .consultation p {
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .tarif-card, .coaching-card {
+        width: 80%;
+        min-height: 8rem;
+        padding: 10px 20px;
+    }
+    .coaching-card {
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 295px){
+    html {
+        font-size: 11px;
+    }
+    .paragraphe p{
+        text-align: justify;
+        padding: 0 10px;
+    }
+    .consultation p {
+        width: 100%;
+    }
 }
