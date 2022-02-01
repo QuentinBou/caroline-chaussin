@@ -94,9 +94,6 @@ export default function TestAnim() {
                     <p>« Vous serez ce que vous croyez »</p>
                     <span>Jésus Christ</span>
                 </div>
-                <div className="citation citation-seule">
-                    <p>«Un temps de partage et d’échanges bienveillants»</p>
-                </div>
                 </section>
               </Animator>
           </ScrollPage>
@@ -104,6 +101,9 @@ export default function TestAnim() {
               <Animator animation={batch(Fade(),MoveOut(600, 400))}>
                 <section>
                     <div className="pratique">
+                        <div className="citation citation-seule">
+                            <p>«Un temps de partage et d’échanges bienveillants»</p>
+                        </div>
                     
                     <div className="paragraphe">
                         <p>La première séance, d’une durée d’environ 1h30, permet de se connaître. La confiance étant l’élément indispensable aux résultats, vous devez pouvoir choisir de donner suite ou non. De mon côté, je vous questionne sur votre problématique afin de trouver le meilleur chemin pour vous guider.</p> <br/>
