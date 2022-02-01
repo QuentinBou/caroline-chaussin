@@ -64,11 +64,19 @@ a {
     font-size: 1.2rem;
     font-style: oblique;
 }
+.citation-seule p {
+    font-size: 1.8rem;
+}
+.citation-seule span {
+    font-size: 1.6rem;
+}
 .component-container{
   min-height: 55vh;
   padding: 1.5rem 0;
 }
-
+.index-prio {
+    z-index: 3 !important;
+}
 footer {
     width: 100%;
     background-color: #F7C67D;

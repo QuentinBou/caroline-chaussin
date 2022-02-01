@@ -2,6 +2,7 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
 }
 .component-container section:not(:first-child){
     margin-top: 4rem;
@@ -34,7 +35,12 @@
     color: #5a2401;
     text-align: center;
 }
-
+.domaines-section {
+    min-height: 120vh !important;
+}
+.domaines {
+    margin-bottom: 2rem;
+}
 .domaine-liste {
     width: 50%;
     margin-top: 2rem;

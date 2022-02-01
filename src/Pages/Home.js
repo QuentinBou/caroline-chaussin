@@ -1,10 +1,13 @@
 import React from 'react';
 import '../Static/CSS/home.css'
+import TestAnim from './TestAnim';
+import Ethique from './Ethique';
+import {Link} from 'react-router-dom'
 
 export default function Home() {
   return (
     <div className='component-container home-container'>
-      <section>
+      {/* <section>
         <div className='name-job'>
           <h1>Caroline Chaussin</h1>
           <h2>Hypnothérapeute</h2>
@@ -25,8 +28,9 @@ export default function Home() {
             Avec soi et les autres <br/>
           </p>
         </div>
-      </section>
-      <section>
+      </section> */}
+      <TestAnim />
+      {/* <section>
         <div className="who">
           <h2>Qui suis-je ?</h2>
         </div>
@@ -41,8 +45,8 @@ export default function Home() {
           <br/>
           <p>La pratique de la relation d’aide me nourrit et m’enrichit chaque jour.</p>
         </div>
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <div className="domaines">
           <h2>Domaines d’intervention:</h2>
           <h3>Adultes, enfants, adolescents</h3>
@@ -67,16 +71,10 @@ export default function Home() {
           <p>Les bénéfices de l’hypnose interviennent dans tous les domaines de la vie.</p>
           <p className="avertissement">Quelque soit la problématique, l’hypnose ne se substitue en aucun cas à un avis médical ni à un traitement médicamenteux.</p>
         </div>
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <div className="pratique">
-          <div className="citation">
-            <p>« Vous serez ce que vous croyez »</p>
-            <span>Jésus Christ</span>
-          </div>
-          <div className="citation">
-            <p>«Un temps de partage et d’échanges bienveillants»</p>
-          </div>
+          
           <div className="paragraphe">
             <p>La première séance, d’une durée d’environ 1h30, permet de se connaître. La confiance étant l’élément indispensable aux résultats, vous devez pouvoir choisir de donner suite ou non. De mon côté, je vous questionne sur votre problématique afin de trouver le meilleur chemin pour vous guider.</p> <br/>
             <p>Une première induction, légère ouvrira les portes de votre cheminement intérieur. Vous trouverez le calme et l’énergie pour avancer.</p> <br/>
@@ -84,11 +82,11 @@ export default function Home() {
             <p>Les séances suivantes seront alors planifiées.</p>
             <br/>
             <br/>
-            <p>Chacune de mes consultations est unique, adaptée à vous seul. La confidentialité est totale. (voir charte éthique).</p>
+            <p>Chacune de mes consultations est unique, adaptée à vous seul. La confidentialité est totale. (<Link to="/caroline-chaussin/ethique">Voir Charte Ethique</Link>).</p>
           </div>
         </div>
-      </section>
-      <section className="tarif">
+      </section> */}
+      {/* <section className="tarif">
         <div className="tarif-card">
           <p className="prize">60€</p>
           <hr/>
@@ -100,7 +98,7 @@ export default function Home() {
           <p className="coaching-detail">Tout coaching fera l’objet d’un devis personnalisé.</p>
         </div>
         <p className="tarif-warning">Tarifs réduits pour les étudiants, chômeurs, personnes en difficultés. (sur justificatif)</p>
-      </section>
+      </section> */}
       <section className="consultation">
         <h2>Consultations:</h2>
         <p>Cabinet: <span>7 rue Étienne de Lacepéde 66000 Perpignan</span></p>
