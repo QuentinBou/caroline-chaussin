@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {Animator, ScrollContainer, ScrollPage, batch, Fade, Sticky, MoveOut, MoveIn, Zoom, ZoomIn, Move, FadeIn} from 'react-scroll-motion'
+import {Animator, ScrollContainer, ScrollPage, batch, Fade, MoveOut, MoveIn, FadeIn} from 'react-scroll-motion'
 
 export default function HomeAnimations() {
   return (
@@ -17,7 +17,7 @@ export default function HomeAnimations() {
                     <span>Milton Erickson</span>
                     </div>
                     <div className="paragraphe">
-                    <p>Chaque être est unique, chaque problème a sa solution unique en fonction de qui vous êtes. L’hypnothérapie offre les outils les plus complets, Aujourd’hui, après plusieurs années de pratique, je sais combien nous pouvons passer à côté de nous-mêmes. Tant d’idées préconçues bloquent notre évolution. Des douleurs enfouies, des traumatismes non reconnus, des états dont nous ne sommes même pas conscients souvent...</p>
+                    <p>Chaque être est unique, chaque problème a sa solution unique en fonction de qui vous êtes. L’hypnothérapie offre les outils les plus complets. Aujourd’hui, après plusieurs années de pratique, je sais combien nous pouvons passer à côté de nous-mêmes. Tant d’idées préconçues bloquent notre évolution. Des douleurs enfouies, des traumatismes non reconnus, des états dont nous ne sommes même pas conscients souvent...</p>
                     <p>Après quelques séances d’hypnose, le regard change, les perspectives s’ouvrent... <br/>Et les possibles grandissent...</p>
                     </div>
                     <div className="citation-perso">

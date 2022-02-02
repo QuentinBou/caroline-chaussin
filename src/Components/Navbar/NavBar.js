@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../Static/CSS/navbar.css'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../Static/img/logo_2.png'
 import { useState } from 'react';
 
@@ -17,6 +17,8 @@ export default function NavBar() {
   const closeNav = () => {
     if (showLinks){
       nav.classList.remove('show-nav')
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
   }
 
@@ -25,19 +27,24 @@ export default function NavBar() {
       <img src={logo} alt="logo du site" className='navbar-logo' />
       <ul className='navbar-links'>
         <li className='navbar-item slideAnime-1' onClick={closeNav}>
-          <Link className='navbar-link' to="/caroline-chaussin/">Accueil</Link>
+          <NavLink className={({ isActive }) => 
+              isActive ? 'active-link' : 'navbar-link'} to="/caroline-chaussin/">Accueil</NavLink>
         </li>
         <li className='navbar-item slideAnime-2' onClick={closeNav}>
-          <Link className='navbar-link' to="/caroline-chaussin/hypno">Hypnothérapie</Link>
+          <NavLink className={({ isActive }) => 
+              isActive ? 'active-link' : 'navbar-link'} to="/caroline-chaussin/hypno">Hypnothérapie</NavLink>
         </li>
         <li className='navbar-item slideAnime-3' onClick={closeNav}>
-          <Link className='navbar-link' to="/caroline-chaussin/carto">Cartomencie</Link>
+          <NavLink className={({ isActive }) => 
+              isActive ? 'active-link' : 'navbar-link'} to="/caroline-chaussin/carto">Cartomencie</NavLink>
         </li>
         <li className='navbar-item slideAnime-4' onClick={closeNav}>
-          <Link className='navbar-link' to="/caroline-chaussin/atelier">Les Ateliers</Link>
+          <NavLink className={({ isActive }) => 
+              isActive ? 'active-link' : 'navbar-link'} to="/caroline-chaussin/atelier">Les Ateliers</NavLink>
         </li>
         <li className='navbar-item slideAnime-5' onClick={closeNav}>
-          <Link className='navbar-link' to="/caroline-chaussin/ethique">Mon Ethique</Link>
+          <NavLink className={({ isActive }) => 
+              isActive ? 'active-link' : 'navbar-link'} to="/caroline-chaussin/ethique">Mon Ethique</NavLink>
         </li>
       </ul>
       <button className='navbar-burger' onClick={handleShowLinks}>

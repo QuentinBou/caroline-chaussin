@@ -62,3 +62,22 @@
 .button-pdf:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
+
+
+@media (max-width: 640px){
+    .ethique-container ul {
+        margin-left: 1rem;
+    }
+    .ethique-container li {
+        width: 90%;
+    }
+}
+@media (max-width: 490px){
+    .button-pdf {
+        position: initial;
+    }
+    .confirm-ethique {
+        margin-left: 0;
+        width: 90%;
+    }
+}
