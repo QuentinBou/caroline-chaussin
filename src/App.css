@@ -10,6 +10,7 @@ html {
 }
 .App {
   position: relative;
+  overflow-x: hidden;
 }
 #root {
   width: 100%;
@@ -90,6 +91,7 @@ footer {
     justify-content: space-between;
     padding: 25px;
     box-shadow: 0 0 12px #873600d7;
+    position: relative;
 }
 footer section h3 {
     text-decoration: underline;
@@ -139,6 +141,7 @@ footer hr {
     font-size: 2rem;
     text-shadow: 0 7px 16px rgba(255, 255, 255, 0.76);
 }
+
 
 
 

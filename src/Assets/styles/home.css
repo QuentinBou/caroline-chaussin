@@ -1,0 +1,207 @@
+.component-container section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+.component-container section:not(:first-child){
+    margin-top: 4rem;
+}
+.name-job h1 {
+    font-size: 4rem;
+}
+.name-job h2 {
+    font-size: 2.4rem;
+}
+.name-job, .domaines {
+    margin-top: 1rem;
+    text-align: center;
+}
+.paragraphe {
+    width: 90%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.paragraphe p, .domaine-liste p {
+    text-align: center;
+    font-size: 1.35rem;
+}
+
+.who h2, .domaines h2, .consultation h2, .citation h2 {
+    font-family: 'Vujahday Script', cursive;
+    font-size: 2.6rem;
+    color: #5a2401;
+    text-align: center;
+}
+.domaines {
+    margin-bottom: 2rem;
+}
+.domaine-liste {
+    width: 50%;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.domaine-liste li {
+    margin-top: 0.5rem;
+    list-style-type: none;
+    text-align: center;
+}
+.domaine-liste p {
+    margin-top: 2rem;
+    font-weight: 400;
+}
+.avertissement {
+    font-style: oblique;
+    font-weight: bold !important;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.24);
+}
+.image-and-text {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-and-text img {
+    margin-right: 1.5rem;
+    width: 20%;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.image-and-text div {
+    margin-left: 1.5rem;
+    line-height: 4rem;
+}
+.profil-pic {
+    margin-top: 3rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 1mm solid;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.tarif {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tarif-card, .coaching-card {
+    width: 33%;
+    min-height: 16rem;
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: .2s ease;
+}
+.tarif-card:hover, .coaching-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.prize, .coaching-title {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.what, .coaching-detail {
+    text-align: center;
+}
+.tarif-warning {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-style: oblique;
+}
+.consultation {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.consult {
+    margin-top: 3.5rem;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.consultation p {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.consultation span {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+@media (min-width: 1250px){
+    
+}
+@media (max-width: 1030px){
+
+}
+@media (max-width: 910px){
+
+}
+@media (max-width: 810px){
+    .tarif-card, .coaching-card {
+        width: 40%;
+    }
+}
+@media (max-width: 730px){
+    .component-container section {
+        width: 95%;
+    }
+}
+@media (max-width: 640px){
+    .paragraphe p{
+        text-align: justify;
+        padding: 0 10px;
+    }
+    .consultation p {
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .tarif-card, .coaching-card {
+        width: 80%;
+        min-height: 8rem;
+        padding: 10px 20px;
+    }
+    .coaching-card {
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 295px){
+    .paragraphe p{
+        text-align: justify;
+        padding: 0 10px;
+    }
+    .consultation p {
+        width: 100%;
+    }
+}
