@@ -1,6 +1,6 @@
 import React from "react";
 import "../Assets/styles/navbar.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../Assets/img/logo_2.png";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";

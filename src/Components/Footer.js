@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { fadeFromBottom, fadeFromLeft, fadeFromRight, simplyFade } from "./animationsVariants";
+import { fadeFromLeft, fadeFromRight, simplyFade } from "./animationsVariants";
 
 export default function Footer() {
   return (

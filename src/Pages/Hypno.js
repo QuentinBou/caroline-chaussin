@@ -4,7 +4,7 @@ import "../Assets/styles/hypno.css";
 import PBureau from "../Assets/img/PBUREAUM.jpg";
 import EvBureau from "../Assets/img/EVBURO.jpg";
 import { AnimatePresence, motion } from "framer-motion";
-import { fadeFromTop, fadeFromTopImg, scaleIn, fadeFromBottomImg, fadeFromRight } from "../Components/animationsVariants";
+import { fadeFromTop, fadeFromBottomImg, fadeFromRight } from "../Components/animationsVariants";
 
 export default function Hypno() {
   return (

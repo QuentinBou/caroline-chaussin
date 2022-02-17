@@ -1,7 +1,6 @@
 import React from "react";
 import "../Assets/styles/home.css";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
 import M2 from "../Assets/img/M2.jpg";
 import Oiseau from "../Assets/img/oiseau.jpg";
 import { fadeFromBottom, fadeFromLeft, fadeFromRight, scaleIn, simplyFade } from "../Components/animationsVariants";
