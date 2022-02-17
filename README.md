@@ -1,3 +1,3 @@
-# Repo for React Project
+# Projet landing Page pour site d'hypnose
 
-## Let's have fun !# react-starter
+
