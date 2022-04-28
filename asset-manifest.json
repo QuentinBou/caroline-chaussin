@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/caroline-chaussin/static/css/main.6d0bea98.css",
-    "main.js": "/caroline-chaussin/static/js/main.9ae955ea.js",
+    "main.css": "/caroline-chaussin/static/css/main.ab7edaf4.css",
+    "main.js": "/caroline-chaussin/static/js/main.ab8845b3.js",
     "static/media/EVBURO.jpg": "/caroline-chaussin/static/media/EVBURO.66e1a4e137543b4f9166.jpg",
     "static/media/PBUREAUM.jpg": "/caroline-chaussin/static/media/PBUREAUM.63668550a437739996d8.jpg",
     "static/media/tao.jpg": "/caroline-chaussin/static/media/tao.87abe9e9d4ea891127f7.jpg",
     "static/media/maux.jpg": "/caroline-chaussin/static/media/maux.966b65c0fd55714cbab2.jpg",
-    "static/media/M2.jpg": "/caroline-chaussin/static/media/M2.85b9a7c6757a31a63f65.jpg",
     "static/media/ethique.pdf": "/caroline-chaussin/static/media/ethique.86afb791ee92e032141b.pdf",
     "static/media/logo_2.png": "/caroline-chaussin/static/media/logo_2.4a5640d9a65da99c4097.png",
     "index.html": "/caroline-chaussin/index.html",
-    "main.6d0bea98.css.map": "/caroline-chaussin/static/css/main.6d0bea98.css.map",
-    "main.9ae955ea.js.map": "/caroline-chaussin/static/js/main.9ae955ea.js.map"
+    "main.ab7edaf4.css.map": "/caroline-chaussin/static/css/main.ab7edaf4.css.map",
+    "main.ab8845b3.js.map": "/caroline-chaussin/static/js/main.ab8845b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d0bea98.css",
-    "static/js/main.9ae955ea.js"
+    "static/css/main.ab7edaf4.css",
+    "static/js/main.ab8845b3.js"
   ]
 }
