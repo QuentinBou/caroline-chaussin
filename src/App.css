@@ -84,13 +84,13 @@ a {
 }
 footer {
     width: 100%;
-    background-color: #F7C67D;
+    background-color: rgb(200, 150, 76);
+    box-shadow: 0 0 12px rgba(200, 150, 76, 0.634);
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 25px;
-    box-shadow: 0 0 12px #873600d7;
     position: relative;
 }
 footer section h3 {

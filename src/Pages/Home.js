@@ -1,120 +1,89 @@
 import React from "react";
-import "../Assets/styles/home.css";
-import { motion, AnimatePresence } from "framer-motion";
-import M2 from "../Assets/img/M2.jpg";
-import Oiseau from "../Assets/img/oiseau.jpg";
-import { fadeFromBottom, fadeFromLeft, fadeFromRight, scaleIn, simplyFade } from "../Components/animationsVariants";
+import { Link } from "react-router-dom";
+import "../Assets/styles/hypno.css";
+import PBureau from "../Assets/img/PBUREAUM.jpg";
+import EvBureau from "../Assets/img/EVBURO.jpg";
+import { AnimatePresence, motion } from "framer-motion";
+import { fadeFromTop, fadeFromBottomImg, fadeFromRight } from "../Components/animationsVariants";
 
 export default function Home() {
   return (
     <AnimatePresence exitBeforeEnter>
-      <motion.div className="component-container home-container">
-        <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeFromLeft}>
-          <div className="name-job">
-            <h1>Caroline Chaussin</h1>
-            <h2>Hypnothérapeute</h2>
-          </div>
-          <div className="citation">
+      <motion.div className="component-container hypno-container">
+        <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeFromTop} className="index-prio">
+          <div className="citation head-citation">
             <p>
-              «C’est le patient qui fait la thérapie. Le thérapeute fournit
-              seulement l’atmosphère. Le patient doit faire tout le travail.»
+              « La vie, c’est comme le vélo, Pour garder l’équilibre tu dois
+              continuer d’avancer »
             </p>
-            <span>Milton Erickson</span>
+            <span>Albert Einstein</span>
+
+            <div className="who">
+              <h2>Qui suis-je ?</h2>
+              <motion.img initial="hidden" animate="visible" viewport={{ once: true }} variants={fadeFromBottomImg} src={PBureau} alt="caroline à son bureau" />
+            </div>
           </div>
           <div className="paragraphe">
             <p>
-              Chaque être est unique, chaque problème a sa solution unique en
-              fonction de qui vous êtes. L’hypnothérapie offre les outils les
-              plus complets. Aujourd’hui, après plusieurs années de pratique, je
-              sais combien nous pouvons passer à côté de nous-mêmes. Tant
-              d’idées préconçues bloquent notre évolution. Des douleurs
-              enfouies, des traumatismes non reconnus, des états dont nous ne
-              sommes même pas conscients souvent...
+              Juste une femme qui a déjà vécue plusieurs vies en une seule.
+              Comédienne, puis journaliste, je me suis toujours sentie
+              chercheuse...
             </p>
+            <br />
             <p>
-              Après quelques séances d’hypnose, le regard change, les
-              perspectives s’ouvrent... <br />
-              Et les possibles grandissent...
+              Comprendre l’être humain, la vie, toutes ces émotions, ces coups
+              du sorts qui nous malmènent ou nous exaltent. Qui nous entraînent
+              ou nous empêchent. Tous ces questionnements m’ont menée sur bien
+              des chemins et, finalement vers l’hypnose, qui, après m’avoir
+              accompagnée dans une période difficile, m’a offert une solide
+              formation et nouvelle trajectoire.
+            </p>
+            <br />
+            <p>
+              La pratique de la relation d’aide me nourrit et m’enrichit chaque
+              jour.
             </p>
           </div>
-          <div className="image-and-text">
-            <img src={Oiseau} alt="Oiseaux qui s'envolent" />
-            <div className="citation-perso">
+        </motion.section>
+
+        {/* <motion.section initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeFromRight}>
+          <div className="pratique">
+            <div className="citation citation-seule">
+              <h2>Ma pratique:</h2>
+              <p>«Un temps de partage et d’échanges bienveillants»</p>
+            </div>
+
+            <img src={EvBureau} className="hypno-img" alt="patient en séance" />
+
+            <div className="citation citation-seule">
+              <p>« Vous serez ce que vous croyez »</p>
+              <span>Jésus Christ</span>
+            </div>
+
+            <div className="paragraphe seance-paragraphe">
               <p>
-                Mieux se connaître pour mieux s’aimer <br />
-                Mieux s’aimer pour mieux aimer <br />
-                Mieux aimer pour mieux vivre <br />
-                Avec soi et les autres <br />
+                La première séance, d’une durée d’environ 1h30, permet de se
+                connaître. La confiance étant l’élément indispensable aux
+                résultats, vous devez pouvoir choisir de donner suite ou non. De
+                mon côté, je vous questionne sur votre problématique afin de
+                trouver le meilleur chemin pour vous guider.
+              </p>
+              <p>
+                Une première induction, légère ouvrira les portes de votre
+                cheminement intérieur. Vous trouverez le calme et l’énergie pour
+                avancer.
+              </p>
+              <p>Nous définissons ensemble la suite.</p>
+              <p>Les séances suivantes seront alors planifiées.</p>
+              <p>
+                Chacune de mes consultations est unique, adaptée à vous seul. La
+                confidentialité est totale. (
+                <Link to="/caroline-chaussin/ethique">Voir Charte Ethique</Link>
+                ).
               </p>
             </div>
           </div>
-        </motion.section>
-
-        <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={simplyFade} className="domaines-section">
-          <div className="citation citation-seule">
-            <p>« Ce à quoi tu résistes persiste»</p>
-            <span>proverbe Maori</span>
-          </div>
-        </motion.section>
-
-        <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeFromRight} className="domaine-liste">
-          <img src={M2} className="profil-pic" alt="profil" />
-          <div className="domaines">
-            <h2>Domaines d’intervention:</h2>
-            <h3>Adultes, enfants, adolescents</h3>
-          </div>
-          <ul>
-            <li>Dépression, deuil, burn out, confiance en soi</li>
-            <li>Troubles alimentaires et gestion du poids</li>
-            <li>Troubles post-traumatiques</li>
-            <li>Troubles du comportement</li>
-            <li>Douleurs physiques</li>
-            <li>Peurs et phobies</li>
-            <li>Allergies</li>
-            <li>Développement personnel</li>
-            <li>Accidents de la vie</li>
-            <li>Addictions et dépendances</li>
-          </ul>
-          <p>
-            Les bénéfices de l’hypnose interviennent dans tous les domaines de
-            la vie.
-          </p>
-          <p className="avertissement">
-            Quelque soit la problématique, l’hypnose ne se substitue en aucun
-            cas à un avis médical ni à un traitement médicamenteux.
-          </p>
-        </motion.section>
-
-        <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeFromBottom} className="tarif">
-          <div className="tarif-card">
-            <p className="prize">60€</p>
-            <hr />
-            <p className="what">Une séance d'hypnothérapie</p>
-          </div>
-          <div className="coaching-card">
-            <p className="coaching-title">Coaching</p>
-            <hr />
-            <p className="coaching-detail">
-              Tout coaching fera l’objet d’un devis personnalisé.
-            </p>
-          </div>
-          <p className="tarif-warning">
-            Tarifs réduits pour les étudiants, chômeurs, personnes en
-            difficultés. (sur justificatif)
-          </p>
-        </motion.section>
-        <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={simplyFade} className="consult">Consultations:</motion.h2>
-        <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={scaleIn} className="consultation">
-          <p>
-            Cabinet: <span>7 rue Étienne de Lacepéde 66000 Perpignan</span>
-          </p>
-          <p>
-            Visio: <span>Messenger ou Skype</span>
-          </p>
-          <p>
-            Domicile: <span>Frais supplémentaires selon distance</span>
-          </p>
-        </motion.section>
+        </motion.section> */}
       </motion.div>
     </AnimatePresence>
   );

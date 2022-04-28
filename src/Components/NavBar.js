@@ -43,7 +43,6 @@ export default function NavBar() {
   return (
     <AnimatePresence>
       <motion.nav initial="hidden" whileInView="visible" variants={navVariant} className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-        <img src={logo} alt="logo du site" className="navbar-logo" />
         <ul className="navbar-links">
           <li className="navbar-item slideAnime-1" onClick={closeNav}>
             <NavLink
@@ -60,8 +59,8 @@ export default function NavBar() {
               className={({ isActive }) =>
                 isActive ? "active-link" : "navbar-link"
               }
-              to="/caroline-chaussin/hypno">
-              Hypnothérapie
+              to="/caroline-chaussin/voyance">
+              Voyance / Cartomancie
             </NavLink>
           </li>
 
@@ -80,13 +79,23 @@ export default function NavBar() {
               className={({ isActive }) =>
                 isActive ? "active-link" : "navbar-link"
               }
+              to="/caroline-chaussin/hypno">
+              Hypnothérapie
+            </NavLink>
+          </li>
+
+          <li className="navbar-item slideAnime-5" onClick={closeNav}>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "active-link" : "navbar-link"
+              }
               to="/caroline-chaussin/ethique">
               Mon Ethique
             </NavLink>
           </li>
-          <BackgroundChanger target="nav" name="navigation" initialBg="#F7C67D" />
+          {/* <BackgroundChanger target="nav" name="navigation" initialBg="#F7C67D" />
           <BackgroundChanger target="body" name="arrière-plan" initialBg="#FFE5BD" />
-          <BackgroundChanger target="footer" name="pied de page" initialBg="#F7C67D" />
+          <BackgroundChanger target="footer" name="pied de page" initialBg="#F7C67D" /> */}
         </ul>
         <button className="navbar-burger" onClick={handleShowLinks}>
           <span className="burger-bar"></span>

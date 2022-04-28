@@ -7,19 +7,18 @@ export default function Footer() {
     <AnimatePresence>
       <footer>
         <motion.section initial="hidden" whileInView="visible" viewport="view" variants={fadeFromLeft}>
-          <h3>Horraires</h3>
+          <h3>Horaires</h3>
           <div className="footer-text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, odio!
+              Sur rendez-vous
             </p>
           </div>
         </motion.section>
         <motion.section initial="hidden" whileInView="visible" viewport="view" variants={simplyFade}>
           <h3>Contact</h3>
           <div className="footer-text">
-            <p>Mail : caro@test.com</p>
-            <p>Tel : 06.00.00.00.00</p>
+            <p>Mail : Carlavoyance16@gmail.com</p>
+            <p>Tel : 06.09.08.02.74</p>
           </div>
           <div className="social-link">
             <a
@@ -42,10 +41,7 @@ export default function Footer() {
           <h3>Comment prendre Rendez-vous ?</h3>
           <div className="footer-text">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. At sunt
-              consectetur est dolorum, voluptatibus vel eveniet soluta ab a
-              assumenda! Veniam non iure doloremque placeat adipisci! Eos porro
-              tempore magni.
+              Contact via téléphone ou par adresse mail.
             </p>
           </div>
         </motion.section>

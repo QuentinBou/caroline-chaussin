@@ -12,8 +12,8 @@
     min-height: 5rem;
     padding: 1rem;
     z-index: 4;
-    background-color: #F7C67D;
-    box-shadow: 0 0 12px #873600d7;
+    background-color: rgb(200, 150, 76);
+    box-shadow: 0 0 12px rgba(200, 150, 76, 0.634);
 }
 .navbar-links {
     list-style-type: none;
